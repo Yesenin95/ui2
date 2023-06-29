@@ -44,10 +44,10 @@ export default function SignInPage() {
                boxShadow={'lg'}
                p={8}>
                <Stack spacing={4}>
-                  <ormControl id="email" onChange={e => (userName.current = e.target.value)}>
+                  <FormControl id="email" onChange={e => (userName.current = e.target.value)}>
                      <FormLabel>Email address</FormLabel>
                      <Input type="email" />
-                  </ormControl>
+                  </FormControl>
                   <FormControl id="password" onChange={e => (pass.current = e.target.value)}>
                      <FormLabel>Password</FormLabel>
                      <Input type="password" />
@@ -69,7 +69,7 @@ export default function SignInPage() {
                         onClick={onSubmit}>
                         Sign in
                      </Button>
-                     <Button as={"a"} href="/auth/signup" variant={"link"}>
+                     <Button as={"a"} href="./signup/page">
                         Зарегестрироваться
                      </Button>
                   </Stack>
